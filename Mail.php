@@ -16,8 +16,8 @@ try {
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'spcedevng@gmail.com        ';                     // SMTP username
-    $mail->Password   = 'ybdnqbewxxgcnnel';                               // SMTP password
+    $mail->Username   = 'Email ID OF Sender';                     // SMTP username
+    $mail->Password   = 'Gmail Account App Code';                               // SMTP password
 $mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 $mail->Port       = 587;                                    // TCP port to connect to 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -82,8 +82,9 @@ else{
       $phone = $_POST['Phone'];
       $url = '%3Dimage%28%22https://chart.googleapis.com/chart?cht=qr%26chs=' . $size . 'x' . $size . '%26chl=' . urlencode($data).'%22%29';
     ?>
+<!-- Insert Data In G-Sheet Using Google AppScript Services. -->
     <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwRfEuQ2LT1oIzHqFAJ5C9vc8OffPftKZ4ZAVYBJCGpqTqi2symJqElzP_2kF6eVnuAWg/exec'
+            const scriptURL = 'Google AppScript (Macro Link)'
 
             window.onload = ( 'submit', e => {
               e.preventDefault()
